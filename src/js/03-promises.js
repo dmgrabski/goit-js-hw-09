@@ -1,7 +1,5 @@
-// Importowanie Notiflix i innych niezbędnych zależności
 import Notiflix from 'notiflix';
 
-// Definicja funkcji createPromise
 export function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
@@ -15,7 +13,6 @@ export function createPromise(position, delay) {
   });
 }
 
-// Obsługa zdarzenia 'DOMContentLoaded' i 'submit' formularza
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form');
 
